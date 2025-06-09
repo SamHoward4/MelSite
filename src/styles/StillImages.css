@@ -1,0 +1,102 @@
+.still-images-container {
+    min-height: 100vh;
+    background-color: #fff8dc;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.still-images-header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 2rem;
+}
+
+.title-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.still-images-header h1 {
+    color: #020570;
+    font-family: letter-gothic-std, monospace, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+.still-images-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section-title {
+    color: #020570;
+    font-family: letter-gothic-std, monospace, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.image-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+}
+
+.side-by-side {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.portrait-image {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.single-image {
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .still-images-container {
+        padding: 1rem;
+        padding-bottom: 200px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .side-by-side {
+        flex-direction: column;
+    }
+
+    .portrait-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2/3;
+    }
+
+    .single-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/3;
+    }
+} 

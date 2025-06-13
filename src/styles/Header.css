@@ -1,5 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .name {
-    padding: 2rem 0 0 2rem;  /* top right bottom left */
+    text-align: left;
+    flex: 1;
+    min-width: 0;
+    padding-right: 1rem;
+}
+
+.page-title {
+    text-align: right;
+    flex: 1;
+    min-width: 0;
+    padding-left: 1rem;
 }
 
 .name-link {
@@ -7,18 +26,29 @@
     color: inherit;
 }
 
-.name h1 {
+h1 {
     margin: 0;
-    color: #020570;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* Mobile Responsive Styles */
-@media screen and (max-width: 768px) {
-    .name {
-        padding: 1rem 0 0 1rem;
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 1rem 1rem 0 1rem;
+    }
+    
+    .name, .page-title {
+        text-align: center;
+        padding: 0;
     }
 
-    .name h1 {
-        font-size: 2rem;
+    h1 {
+        font-size: 28px;
     }
 }

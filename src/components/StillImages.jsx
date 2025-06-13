@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
 import '../styles/StillImages.css';
 import fifthAve07 from '../assets/5thave-07.jpg';
 import fifthAve08 from '../assets/5thave-08.jpg';
@@ -19,8 +21,9 @@ import connecticut from '../assets/connecticut.jpg';
 const StillImages = () => {
     return (
         <div className="still-images-container">
+            <Header pageTitle="Still Images" />
             <div className="still-images-content">
-                <h1 className="section-title">PORTRAITS</h1>
+                <h2 className="section-title">PORTRAITS</h2>
                 <div className="image-grid">
                     <div className="side-by-side">
                         <img src={fifthAve07} alt="5th Avenue 07" className="portrait-image" />
@@ -31,7 +34,7 @@ const StillImages = () => {
                     <img src={hudsonPier098} alt="Hudson Pier 098" className="single-image" />
                     <img src={hudsonPier112} alt="Hudson Pier 112" className="single-image" />
                 </div>
-                <h1 className="section-title">TRAVEL</h1>
+                <h2 className="section-title">TRAVEL</h2>
                 <div className="image-grid">
                     <div className="side-by-side">
                         <img src={oct2424} alt="October 24, 2024" className="portrait-image" />
@@ -50,6 +53,7 @@ const StillImages = () => {
                     <img src={connecticut} alt="Connecticut" className="single-image" />
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

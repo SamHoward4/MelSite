@@ -1,17 +1,19 @@
 import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
 import '../styles/About.css';
 
 const About = () => {
     return (
         <div className="about-container">
-            <div className="about-header">
-                <div className="title-section">
-                    <h1>ABOUT</h1>
-                    <div className="about-content">
-                        {/* Content will go here */}
-                    </div>
+            <Header pageTitle="About" />
+            <div className="about-content">
+                <div className="about-section">
+                    <h2>About Me</h2>
+                    <p>Your about content will go here...</p>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

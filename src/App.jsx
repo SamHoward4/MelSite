@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from "./components/Header.jsx";
 import Home from "./components/Home.jsx";
 import Footer from "./components/Footer.jsx";
 import MovingImages from "./components/MovingImages.jsx";
@@ -12,7 +11,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/moving-images" element={<MovingImages />} />

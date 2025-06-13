@@ -2,12 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
-const Header = () => {
+const Header = ({ pageTitle }) => {
     return(
-        <div className="name">
-            <Link to="/" className="name-link">
-                <h1>Melenie Chaffey</h1>
-            </Link>
+        <div className="header">
+            <div className="name">
+                <Link to="/" className="name-link">
+                    <h1>Melanie Chaffey</h1>
+                </Link>
+            </div>
+            {pageTitle && (
+                <div className="page-title">
+                    <h1>{pageTitle}</h1>
+                </div>
+            )}
         </div>
     );
 };

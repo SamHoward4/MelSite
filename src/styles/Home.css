@@ -1,15 +1,15 @@
-.homecontainer {
-    text-align: center;
-    margin: auto;
-    min-height: calc(100vh - 120px);  /* Subtract header and footer height */
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-content {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-h1 {
-    color: #020570;
-    margin: 0;  /* Remove default margins */
+    padding: 2rem;
 }
 
 .headshot {
@@ -22,8 +22,8 @@ h1 {
 
 /* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
-    .homecontainer {
-        min-height: calc(100vh - 200px);
+    .home-content {
+        padding: 1rem;
     }
 
     .headshot {

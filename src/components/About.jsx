@@ -8,10 +8,8 @@ const About = () => {
         <div className="about-container">
             <Header pageTitle="About" />
             <div className="about-content">
-                <div className="about-section">
-                    <h2>About Me</h2>
-                    <p>Your about content will go here...</p>
-                </div>
+                <h2>ABOUT</h2>
+                <p>My documentary work has found me spending hours filming in a canoe, getting close-ups of cows' tongues, and collaborating with an array of fascinating people. Through my narratives, I've worked with actors through scenes require them to choke on hair, shiver in freezing Nebraska weather, and recite Shakespeare while getting screamed at. Having lived in Alaska, Colorado, several countries in South America, and now Brooklyn, I'm prepared and excited for whatever adventure my next project brings me!</p>
             </div>
             <Footer />
         </div>
